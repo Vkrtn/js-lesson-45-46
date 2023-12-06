@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en"  data-theme="white">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      rel="icon"
+      href="https://cdn.icon-icons.com/icons2/2108/PNG/512/javascript_icon_130900.png"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+  </head>
+  <body>
+
+
+    <div class="container">
+      <div class="to-do">
+        <h1>
+          Todo-list
+        </h1>
+
+        <form action="#" name="addForm">
+          <input type="text" placeholder="Add Todo-Item" name="input">
+          <button type="button" name="btn" class="btn">Add</button>
+        </form>
+
+        <div class="filters">
+          <label>
+            Sort by
+            <select class="todoFilter" id="yourTodoFilterId">
+              <option value="DateO">Date 'old'</option>
+              <option value="DateN">Date 'new'</option>
+            </select>
+            
+          </label>
+        </div>
+
+        <ul class="todo-items">
+
+        </ul>
+      </div>
+    </div>
+
+
+
+    <script src="./js/dotos.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>

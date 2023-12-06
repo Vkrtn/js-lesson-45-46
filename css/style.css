@@ -1,0 +1,263 @@
+input,
+label,
+select,
+button,
+textarea {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  background: none;
+  line-height: 1;
+  /* Browsers have different default form fonts */
+  font-size: 13px;
+  font-family: Arial;
+}
+
+/* Remove the stupid outer glow in Webkit */
+input:focus {
+  outline: 0;
+}
+
+/* Box Sizing Reset
+-----------------------------------------------*/
+/* All of our custom controls should be what we expect them to be */
+input,
+textarea {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+
+/* These elements are usually rendered a certain way by the browser */
+button,
+input[type=reset],
+input[type=button],
+input[type=submit],
+input[type=checkbox],
+input[type=radio],
+select {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* Text Inputs
+-----------------------------------------------*/
+/* Button Controls
+-----------------------------------------------*/
+input[type=checkbox],
+input[type=radio] {
+  width: 13px;
+  height: 13px;
+}
+
+/* File Uploads
+-----------------------------------------------*/
+/* Search Input
+-----------------------------------------------*/
+/* Make webkit render the search input like a normal text field */
+input[type=search] {
+  -webkit-appearance: textfield;
+  -webkit-box-sizing: content-box;
+}
+
+/* Turn off the recent search for webkit. It adds about 15px padding on the left */
+::-webkit-search-decoration {
+  display: none;
+}
+
+/* Buttons
+-----------------------------------------------*/
+button,
+input[type=reset],
+input[type=button],
+input[type=submit] {
+  /* Fix IE7 display bug */
+  overflow: visible;
+  width: auto;
+}
+
+/* IE8 and FF freak out if this rule is within another selector */
+::-webkit-file-upload-button {
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+/* Textarea
+-----------------------------------------------*/
+textarea {
+  /* Move the label to the top */
+  vertical-align: top;
+  /* Turn off scroll bars in IE unless needed */
+  overflow: auto;
+}
+
+/* Selects
+-----------------------------------------------*/
+select[multiple] {
+  /* Move the label to the top */
+  vertical-align: top;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+/* __________________ */
+* {
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+body {
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+  background-color: var(--body-bg-color);
+}
+
+.container {
+  max-width: 1000px;
+  margin: 50px auto;
+}
+
+.btn {
+  padding: 10px;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+}
+.btn:active {
+  border: 1px solid black;
+}
+
+.to-do {
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 30px;
+  border: 5px solid rgba(137, 43, 226, 0.4352941176);
+  border-radius: 1rem;
+}
+.to-do .todo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 0.5rem;
+  margin: 10px 0;
+}
+.to-do .todo-item input:checked + p {
+  opacity: 0.5;
+}
+.to-do .todo-item button {
+  height: 20px;
+  width: 20px;
+  margin-left: auto;
+  border-radius: 50%;
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid rgba(0, 0, 0, 0.4235294118);
+}
+.to-do .todo-item button:hover {
+  background-color: #f77b7b;
+  border-color: black;
+}
+.to-do .todo-item:nth-child(even) {
+  border-color: rgb(201, 122, 122);
+}/*# sourceMappingURL=style.css.map */
